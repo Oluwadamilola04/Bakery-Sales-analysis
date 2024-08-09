@@ -4,7 +4,7 @@ import pandas as pd
 #import matplotlib.pyplot as plt # type: ignore
 
 def load_data():
-    file = 'C:/Users/HP/Data_Apps/Bakery_App/bakerysales.csv'
+    file = 'bakerysales.csv'
     df = pd.read_csv(file)
     df.rename(columns={'Unnamed: 0': 'id', 'article':'product', 'Quantity': 'quantity'},  inplace = True)
     df.unit_price=df.unit_price.str.replace(',','.').str.replace('€','').str.strip()
