@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt # type: ignore
+#import matplotlib.pyplot as plt # type: ignore
 
 def load_data():
     file = 'C:/Users/HP/Data_Apps/Bakery_App/bakerysales.csv'
